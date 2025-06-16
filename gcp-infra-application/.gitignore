@@ -1,0 +1,15 @@
+.terraform/
+*_override.tf
+*_override.tf.json
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+plan
+gcp-key.json
+cred*.json
+plan.cache
+infra/imports/
+.DS_Store
+.terraform*

@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.75.0
+    hooks:
+      # To format terraform code
+      - id: terraform_fmt
+      # To validate terraform code
+      - id: terraform_validate
+      # To insert terraform documents for repo
+      - id: terraform_docs
+        args:
+          - --hook-config=--path-to-file=README.md
+          - --hook-config=--add-to-existing-file=true
+          - --hook-config=--create-file-if-not-exist=true
